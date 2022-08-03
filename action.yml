@@ -1,0 +1,30 @@
+name: 'HCL OneTest API'
+description: 'HCL OneTest API Action to execute WebUI test from GitHub Action.'
+inputs:
+  projectDir:
+    description: 'The fully qualified path to HCL OneTest API project directory. This value will be ignored if parameterFile field is used.'
+    required: true
+
+  projectName:
+    description: 'The name of the API test project. This value will be ignored if parameterFile field is used.'
+    required: true
+
+  environment:
+    description: 'The API Test environment to use for this execution. This value will be ignored if parameterFile field is used.'
+    required: true
+
+  tests:
+    description: 'Semicolon separated list of tests/suites to run. This value will be ignored if parameterFile field is used.'
+    required: true
+
+  parameterFile:
+    description: 'The fully qualified path to a parameter file that contains project, environment, and run arguments for one or more tests.'
+    required: false
+
+  junitDir:
+    description: 'Specify the folder to export the JUnit reports to.'
+    required: false
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
