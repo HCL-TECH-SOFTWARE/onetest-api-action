@@ -20,7 +20,7 @@ jobs:
         name: HCL OneTest API
         steps:
          - name: HCL OneTest API
-           uses: anuraag-k/APITestAction@main
+           uses: HCL-TECH-SOFTWARE/APITestAction@main
            with:
             projectDir: 
             projectName: 
