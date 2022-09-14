@@ -33,7 +33,7 @@ jobs:
             projectDir: <C:\Data\SampleProject>
             projectName: <MyProject>
             environment: <Demo>
-            tests: <MyTest>      
+            tests: <MyTest>
 ```
 
 3. Update the parameterized items to refer to your project and tests (see parameter details below).
