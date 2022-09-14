@@ -8,7 +8,7 @@ jobs:
         name: HCL OneTest API
         steps:
          - name: HCL OneTest API
-           uses: HCL-TECH-SOFTWARE/APITestAction@main
+           uses: HCL-TECH-SOFTWARE/onetest-api-action@main
            with:
             projectDir:
             projectName: 
