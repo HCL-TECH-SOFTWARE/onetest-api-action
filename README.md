@@ -28,7 +28,7 @@ jobs:
         runs-on: self-hosted
         steps:
          - name: HCL OneTest API
-           uses: HCL-TECH-SOFTWARE/onetest-api-action@v1
+           uses: HCL-TECH-SOFTWARE/onetest-api-action@main
            with:
             projectDir: <C:\Data\SampleProject>
             projectName: <MyProject>
